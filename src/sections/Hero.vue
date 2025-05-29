@@ -13,13 +13,30 @@ import AstroImage from '../components/AstroImage.vue'
         corporis! Expedita distinctio modi numquam voluptatum voluptatibus sint dignissimos iste,
         excepturi animi ullam exercitationem voluptatem dolor corrupti!
       </p>
-      <Button>Contact</Button>
+      <Button
+        :onClick="
+          () => {
+            scrollToContact()
+          }
+        "
+        >Contact</Button
+      >
     </div>
     <div class="col-right">
       <AstroImage></AstroImage>
     </div>
   </section>
 </template>
+
+<script lang="ts">
+function scrollToContact() {
+  const contactSection = document.getElementById('contact')
+  if (!contactSection) return console.error("Couldn't find a contact section")
+
+  contactSection.scrollIntoView({ behavior: 'smooth' })
+  return console.log('scrolling')
+}
+</script>
 
 <style scoped>
 #hero {
