@@ -7,6 +7,12 @@ import ProjectCard from '../components/ProjectCard.vue'
     <h2 class="projects-title">Projects</h2>
     <div class="projects-container">
       <ProjectCard
+        name="Duskvale"
+        img="/duskvale.png"
+        url="https://duskvale.com"
+        github="https://github.com/jcbkdev/duskvale-blog"
+      />
+      <ProjectCard
         name="Freelancing Website"
         img="/img.png"
         url="https://dev.jcbk.pl"
