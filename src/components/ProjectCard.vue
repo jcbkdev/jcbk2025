@@ -6,7 +6,7 @@ defineProps<{
   name: string
   img: string
   url: string
-  github: string
+  github?: string
 }>()
 
 const showModal = ref(false)

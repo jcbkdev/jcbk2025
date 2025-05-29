@@ -7,7 +7,7 @@ const emit = defineEmits(['close'])
 
 defineProps<{
   url: string
-  github: string
+  github?: string
 }>()
 
 const openInNewTab = (url: string) => {
@@ -32,7 +32,7 @@ const openInNewTab = (url: string) => {
           "
           >Close</Button
         >
-        <Button :onClick="() => openInNewTab(github)">GitHub</Button>
+        <Button v-if="github" :onClick="() => openInNewTab(github!)">GitHub</Button>
         <Button
           :onClick="
             () => {
