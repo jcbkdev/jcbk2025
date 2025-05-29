@@ -1,0 +1,33 @@
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-0: #0a0a0a00;
+  --color-bg-30: #0a0a0a4d;
+  --color-main: #0059ff;
+  --color-text: #ffffff;
+
+  --grad-bg-10: linear-gradient(to top left, #0a0a0a1a, #ffffff1a);
+  --grad-bg-30: linear-gradient(to top left, #0a0a0a4d, #ffffff4d);
+  --grad-bg-100: linear-gradient(to top left, #0a0a0a, #ffffff);
+
+  --font-section-title-size: 48px;
+  --font-section-title-weight: 700;
+
+  --font-main: 'Host Grotesk', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  font-family: var(--font-main);
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  margin-bottom: 4rem;
+}
