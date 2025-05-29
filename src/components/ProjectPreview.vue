@@ -12,6 +12,8 @@ defineProps<{
 
 const openInNewTab = (url: string) => {
   window.open(url, '_blank')
+
+  enableScroll()
 }
 </script>
 
