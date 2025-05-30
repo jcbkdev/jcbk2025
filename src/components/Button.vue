@@ -1,11 +1,12 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ onClick?: () => void }>(), {
+withDefaults(defineProps<{ onClick?: () => void; fill?: boolean }>(), {
   onClick: () => {},
+  fill: false,
 })
 </script>
 
 <template>
-  <button @click="onClick" class="btn">
+  <button @click="onClick" class="btn" :class="{ filled: fill }">
     <span><slot></slot></span>
     <div class="btn-gradient-bg"></div>
   </button>
@@ -33,6 +34,10 @@ withDefaults(defineProps<{ onClick?: () => void }>(), {
   transition:
     border-color var(--animation-speed) var(--animation-ease),
     text-shadow var(--animation-speed) var(--animation-ease);
+}
+
+.btn.filled {
+  background-color: var(--color-bg);
 }
 
 .btn:hover {

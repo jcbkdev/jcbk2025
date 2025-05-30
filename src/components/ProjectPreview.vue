@@ -30,9 +30,10 @@ const openInNewTab = (url: string) => {
               emit('close')
             }
           "
+          :fill="true"
           >Close</Button
         >
-        <Button v-if="github" :onClick="() => openInNewTab(github!)">GitHub</Button>
+        <Button v-if="github" :onClick="() => openInNewTab(github!)" :fill="true">GitHub</Button>
         <Button
           :onClick="
             () => {
@@ -40,6 +41,7 @@ const openInNewTab = (url: string) => {
               emit('close')
             }
           "
+          :fill="true"
           >Open in a new tab</Button
         >
       </div>
