@@ -1,34 +1,47 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import ProjectPreview from './ProjectPreview.vue'
+import ProjectIndicator from './ProjectIndicator.vue'
 
 defineProps<{
   name: string
   img: string
   url: string
   github?: string
+  isActive?: boolean
 }>()
 
 const showModal = ref(false)
+
+let isHovered = ref(false)
 </script>
 
 <template>
-  <div class="project-card" @click="showModal = true">
-    <div
-      class="project-img"
-      :class="img ? '' : 'placeholder'"
-      v-bind:data-image="img ?? null"
-      :style="img && `--bg-url: url('${img}')`"
-    ></div>
-    <div class="project-details">
-      <h3>{{ name ?? 'Project Name' }}</h3>
+  <div @mouseover="isHovered = true" @mouseout="isHovered = false" class="project-card-wrapper">
+    <ProjectIndicator v-if="isActive" :is-hovered="isHovered" />
+    <div class="project-card" @click="showModal = true">
+      <div
+        class="project-img"
+        :class="img ? '' : 'placeholder'"
+        v-bind:data-image="img ?? null"
+        :style="img && `--bg-url: url('${img}')`"
+      ></div>
+      <div class="project-details">
+        <h3>{{ name ?? 'Project Name' }}</h3>
+      </div>
+      <div class="project-bg"></div>
     </div>
-    <div class="project-bg"></div>
   </div>
   <ProjectPreview v-if="showModal" :url="url" :github="github" @close="showModal = false" />
 </template>
 
 <style scoped>
+.project-card-wrapper {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
 .project-card {
   --animation-speed: 0.2s;
   --animation-ease: ease-out;

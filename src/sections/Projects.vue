@@ -11,6 +11,7 @@ import ProjectCard from '../components/ProjectCard.vue'
         img="/duskvale.png"
         url="https://duskvale.com"
         github="https://github.com/jcbkdev/duskvale-blog"
+        :is-active="true"
       />
       <ProjectCard
         name="Freelancing Website"
