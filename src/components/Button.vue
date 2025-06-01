@@ -62,4 +62,8 @@ withDefaults(defineProps<{ onClick?: () => void; fill?: boolean }>(), {
 .btn:hover .btn-gradient-bg {
   opacity: 0.3;
 }
+
+.btn:disabled {
+  cursor: not-allowed;
+}
 </style>
