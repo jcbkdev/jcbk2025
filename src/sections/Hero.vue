@@ -8,11 +8,15 @@ import AstroImage from '../components/AstroImage.vue'
   <section id="hero">
     <div class="col-left">
       <h1 class="hero-title">Hi!<HandWave />I'm Jakub Konieczny</h1>
+      <h2 class="hero-label">Frontend Developer</h2>
       <p class="hero-desc">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt et quae incidunt quam
-        corporis! Expedita distinctio modi numquam voluptatum voluptatibus sint dignissimos iste,
-        excepturi animi ullam exercitationem voluptatem dolor corrupti!
+        I build fast, responsive web apps with React and TypeScript focused on a clean UI and great
+        performance on multiple platforms. Lately, I've been working on <b><i>Duskvale</i></b> which
+        is a browser-based MMO with no pay-to-win, just solid gameplay. I enjoy building things that
+        feel good and work everywhere! I am always looking for ways to challenge myself and try out
+        new tools.
       </p>
+
       <Button
         :onClick="
           () => {
@@ -57,7 +61,12 @@ function scrollToContact() {
   font-size: var(--font-section-title-size);
   font-weight: var(--font-section-title-weight);
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: -16px;
+}
+
+.hero-label {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .hero-desc {
