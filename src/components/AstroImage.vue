@@ -43,7 +43,7 @@ import Javascript from './icons/Javascript.vue'
 .spinner > :nth-child(n) {
   position: absolute;
   width: 520px;
-  /* max-width: 100%; */
+  max-width: 100%;
   offset-rotate: 0deg;
   offset-path: polygon(0% 0%, 100% 0%, 0% 0%, 0% 0%);
 }
