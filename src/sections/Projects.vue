@@ -21,7 +21,7 @@ import ProjectCard from '../components/ProjectCard.vue'
       />
       <ProjectCard
         name="SaveCash"
-        img="https://jcbk.pl/assets/savecash.png"
+        img="/savecash.png"
         url="https://savecash.jcbk.pl"
         github="https://github.com/jcbkdev/savecash"
       />
