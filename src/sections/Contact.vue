@@ -315,4 +315,16 @@ async function sendMessage(e: Event) {
 .contact-other a:hover path {
   stroke: var(--color-hover);
 }
+
+@media screen and (max-width: 640px) {
+  .contact-form {
+    box-sizing: border-box;
+    padding: 0 24px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 </style>
