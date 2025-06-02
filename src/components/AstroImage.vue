@@ -114,4 +114,11 @@ import Javascript from './icons/Javascript.vue'
     offset-distance: 100%;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .astro-container {
+    width: auto;
+    transform: scale(0.8);
+  }
+}
 </style>

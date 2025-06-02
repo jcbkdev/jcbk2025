@@ -73,4 +73,20 @@ function scrollToContact() {
   margin: 0;
   margin-bottom: 24px;
 }
+
+@media screen and (max-width: 1090px) {
+  #hero {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: -8px;
+  }
+  .hero-label {
+    font-size: 18px;
+  }
+}
 </style>
