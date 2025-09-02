@@ -24,7 +24,7 @@ import Javascript from './icons/Javascript.vue'
 <style scoped>
 .astro-container {
   position: relative;
-  width: 420px;
+  width: 362px;
   height: 480px;
 }
 
@@ -33,7 +33,7 @@ import Javascript from './icons/Javascript.vue'
 
   position: absolute;
   top: 30%;
-  left: 16%;
+  left: 14%;
   width: 62%;
 
   display: flex;
