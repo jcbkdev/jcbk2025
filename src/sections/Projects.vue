@@ -14,22 +14,22 @@ import ProjectCard from '../components/ProjectCard.vue'
         :is-active="true"
       />
       <ProjectCard
-        name="Freelancing Website"
-        img="/img.png"
-        url="https://dev.jcbk.pl"
-        github="https://github.com/jcbkdev/jcbkdev-freelance"
-      />
-      <ProjectCard
-        name="SaveCash"
-        img="/savecash.png"
-        url="https://savecash.jcbk.pl"
-        github="https://github.com/jcbkdev/savecash"
-      />
-      <ProjectCard
         name="GameDeals"
         img="/gamedeals.png"
         url="https://gamedeals.jcbk.pl"
         github="https://github.com/jcbkdev/gamedeals-jcbk"
+      />
+      <ProjectCard
+      name="SaveCash"
+      img="/savecash.png"
+      url="https://savecash.jcbk.pl"
+      github="https://github.com/jcbkdev/savecash"
+      />
+      <ProjectCard
+        name="Freelancing Website"
+        img="/img.png"
+        url="https://dev.jcbk.pl"
+        github="https://github.com/jcbkdev/jcbkdev-freelance"
       />
     </div>
   </section>
